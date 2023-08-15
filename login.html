@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Itim&family=Merriweather:wght@300;700&family=Poppins:wght@300&family=Quicksand&family=Raleway:wght@300;400&family=Shadows+Into+Light&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6487c144b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>Login</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: aliceblue;
+      }
+
+      header {
+        background-color: #100f0fa1;
+        color: #fff;
+        padding: 10px 0;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .logo {
+        font-size: 24px;
+      }
+
+      .signinOptions {
+        display: flex;
+        align-items: center;
+      }
+
+      .signinOptions div {
+        margin: 0 10px;
+      }
+
+      .signinOptions a {
+        color: #fff;
+        transition: color 0.3s;
+      }
+
+      .signinOptions a:hover {
+        color: #99dceb;
+      }
+
+      .divider {
+        color: #fff;
+      }
+
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        flex-direction: column;
+      }
+
+      .content h2 {
+        letter-spacing: 3px;
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .option {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .option button {
+        background-color: #100f0fa1;
+        color: #fff;
+        border: none;
+        border-radius: 1.5rem;
+        padding: 20px 80px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-weight: 600;
+      }
+
+      .option button:hover {
+        background-color: #99dceb;
+        letter-spacing: 1px;
+      }
+
+      .option a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .login-form {
+        background-color: #100f0fa1;
+        color: #fff;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 10rem auto;
+        max-width: 28rem;
+        height: 25rem;
+      }
+
+      .login-form h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .login-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 3rem;
+      }
+
+      .login-form input {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .login-form input[type="submit"] {
+        background-color: #100f0fa1;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-weight: 600;
+        letter-spacing: 2px;
+        cursor: pointer;
+      }
+
+      .login-form input[type="submit"]:hover {
+        background-color: #99dceb;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">testing</div>
+        <div class="signinOptions">
+          <div><a href="/mini-project/login.php">login</a></div>
+          <div class="divider">|</div>
+          <div><a href="/mini-project/signup.html">Sign up</a></div>
+        </div>
+      </div>
+    </header>
+        
+
+
+
+
+        <section>
+      <div class="login-form">
+        <h2>Login</h2>
+        <form id="loginform">
+          <input
+            id="email"
+            type="text"
+            placeholder="email"
+            name="username"
+            required
+          />
+          <input
+            id="password"
+            type="password"
+            placeholder="Password"
+            name="password"
+            required
+          />
+          <input type="submit" value="login" id="submit" />
+        </form>
+      </div>
+    </section>
+    <script src="main.js"></script>
+  </body>
+</html>

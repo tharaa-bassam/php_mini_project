@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <script
+      src="https://kit.fontawesome.com/6487c144b2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Anton&family=Itim&family=Merriweather:wght@300;700&family=Poppins:wght@300&family=Quicksand&family=Raleway:wght@300;400&family=Shadows+Into+Light&family=Yellowtail&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/6487c144b2.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <title>Sign Up</title>
+    <title>Sign Up</title>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+        font-family: "Poppins", sans-serif;
+      }
+
+      body {
+        background-color: aliceblue;
+      }
+
+      header {
+        background-color: #100f0fa1;
+        color: #fff;
+        padding: 10px 0;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 0 20px;
+      }
+
+      .logo {
+        font-size: 24px;
+      }
+
+      .signinOptions {
+        display: flex;
+        align-items: center;
+      }
+
+      .signinOptions div {
+        margin: 0 10px;
+      }
+
+      .signinOptions a {
+        color: #fff;
+        transition: color 0.3s;
+      }
+
+      .signinOptions a:hover {
+        color: #99dceb;
+      }
+
+      .divider {
+        color: #fff;
+      }
+
+      .content {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 70vh;
+        flex-direction: column;
+      }
+
+      .content h2 {
+        letter-spacing: 3px;
+        color: rgb(0, 0, 0);
+        font-size: 40px;
+        text-align: center;
+      }
+
+      .option {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+      }
+
+      .option button {
+        background-color: #100f0fa1;
+        color: #fff;
+        border: none;
+        border-radius: 1.5rem;
+        padding: 20px 80px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        font-weight: 600;
+      }
+
+      .option button:hover {
+        background-color: #99dceb;
+        letter-spacing: 1px;
+      }
+
+      .option a {
+        color: #fff;
+        text-decoration: none;
+      }
+
+      .signup-form {
+        background-color: #100f0fa1;
+        color: #fff;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 10rem auto;
+        max-width: 500px;
+        height: 34rem;
+      }
+
+      .signup-form h2 {
+        margin-bottom: 20px;
+        font-size: 24px;
+        text-align: center;
+      }
+
+      .signup-form form {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+      }
+
+      .signup-form input {
+        padding: 10px;
+        margin-bottom: 10px;
+        border: none;
+        border-radius: 5px;
+      }
+
+      .signup-form .name-inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+      }
+
+      .signup-form .dob-inputs {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+      }
+
+      .signup-form input[type="submit"] {
+        background-color: #100f0fa1;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+
+      .signup-form input[type="submit"]:hover {
+        background-color: #99dceb;
+      }
+
+      .con-sign {
+        text-align: center;
+      }
+
+      .con-sign a {
+        color: #99dceb;
+      }
+
+      .error {
+        font-size: 15px;
+        color: red;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="navbar">
+        <div class="logo">testing</div>
+        <div class="signinOptions">
+          <div><a href="/mini-project/login.html">login</a></div>
+          <div class="divider">|</div>
+          <div><a href="/mini-project/signup.html">Sign up</a></div>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <div class="signup-form">
+        <h2>Sign Up</h2>
+        <form id="signUpForm">
+          <div class="name-inputs">
+            <input
+              type="text"
+              placeholder="First Name"
+              name="fname"
+              id="fname"
+            />
+            <input
+              type="text"
+              placeholder="Middle Name"
+              name="midname"
+              id="midname"
+            />
+            <input
+              type="text"
+              placeholder="Last Name"
+              name="lname"
+              id="lname"
+            />
+            <input
+              type="text"
+              placeholder="Family Name"
+              name="famname"
+              id="famname"
+              required
+            />
+          </div>
+          <input type="email" placeholder="Email" name="email" id="email" />
+
+          <div class="dob-inputs">
+            <input type="date" name="date" id="date" />
+            <input type="tel" placeholder="Mobile" name="phone" id="phone" />
+          </div>
+
+          <input
+            type="password"
+            placeholder="Password"
+            name="password"
+            id="password"
+          />
+          <input
+            type="password"
+            placeholder="Confirm Password"
+            name="confpass"
+            id="confpass"
+          />
+
+          <input type="submit" name="submit" value="submit" id="submit" />
+
+          <div class="con-sign">
+            <p>
+              do you have account ? <a href="/mini-project/login.html">login</a>
+            </p>
+          </div>
+        </form>
+      </div>
+    </section>
+    <script src="signup.js"></script>
+  </body>
+</html>
